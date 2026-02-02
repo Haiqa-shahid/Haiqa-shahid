@@ -2,12 +2,12 @@ pipeline {
   agent any
   stages {
     stage('Clone') {
-      steps { git 'https://github.com/USERNAME/devops-webapp.git' }
+      steps { git 'https://github.com/Haiqa-shahid/https://github.com/Haiqa-shahid/Haiqa-shahid.git' }
     }
     stage('Build & Push') {
       steps {
-        sh 'docker build -t username/devops-webapp .'
-        sh 'docker push username/devops-webapp'
+        sh 'docker build -t hyka/myapp:latest .'
+        sh 'docker push hyka/myapp:latest'
       }
     }
     stage('Deploy') {
